@@ -10,7 +10,7 @@ const fetchMessagesFromHistory = async (
       userId: "me",
       startHistoryId: historyId,
     });
-
+    console.log("messages from history", res);
     const history = res.data.history;
 
     console.log("history ===>", history);

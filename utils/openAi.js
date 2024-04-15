@@ -236,7 +236,9 @@ const generateReplyText = async (scenario, email, userEmail) => {
         {
           role: "system",
           content: `I want you to act as an Email Writer Expert. I will provide you email that user given and you have to Write a professional reply to this email based provided email context. Reply should be based on provided scenario and email body stating with Subject that is in email context, followed by body text.
-            \n Exclude company name, position, name and regards etc. \n\n`,
+            \n Exclude company name, position, name and regards etc. \n
+            \n You must ask for Type of Foundation and Reason for inquiry, use sections and bold to put emphasis on the questions\n
+            \n Add 'Powered by MennyAI' on footer\n`,
         },
         {
           role: "user",
